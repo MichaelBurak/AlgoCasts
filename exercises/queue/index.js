@@ -8,6 +8,20 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+    constructor() {
+        this.data = []
+    }
+    //always add into the FRONT 
+    add(record) {
+        //this is core js array method to add to front, mutation
+        this.data.unshift(record)
+    }
+    //remove from END AND RETURN so it can be worked with
+    remove(record) {
+        //core JS 
+        return this.data.pop(record)
+    }
+}
 
 module.exports = Queue;
