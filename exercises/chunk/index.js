@@ -8,6 +8,31 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-function chunk(array, size) {}
+function chunk(array, size) {
+    //create an empty chunks array
+    //for i in unchunked, grab last in chunked
+    //if no last, of length = chunk size
+    //push chunk in with current element 
+    //else add current element into chucnk
 
+    //  iterative:
+    //   const chunked = [];
+
+    //     for (let element of array) {
+    //         const last = chunked[chunked.length - 1];
+
+    //         if (!last || last.length === size) {
+    //             chunked.push([element])
+    //         }
+    //         else {
+    //             last.push(element)
+    //         }
+    //     }
+    //     return chunked
+    // }
+
+    //slice solution - base JS array methods
+    //slice(startindex,endIndex). starting at element, copy every element to end index
+    //but not including end index.
+}
 module.exports = chunk;
